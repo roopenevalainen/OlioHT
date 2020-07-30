@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:background="@drawable/rangenator_bc">
+
+
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:id="@+id/editTxtUsername"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:id="@+id/editTxtPassword"
+        android:inputType="textPassword"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="Log In"
+        android:textSize="25dp"
+        android:id="@+id/signInButton"
+        android:onClick="onLoginBtnClicked"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="550dp"
+        android:text="Create new account"
+        android:id="@+id/addNewUserBtn"
+        android:onClick="onNewUserBtnClicked"
+        />
+
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:visibility="invisible"
+        android:id="@+id/progressbar_login"/>
+</RelativeLayout>

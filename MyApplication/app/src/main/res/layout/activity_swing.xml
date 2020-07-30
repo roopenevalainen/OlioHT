@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwingActivity"
+    android:background="@drawable/rangenator_bc">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="Your swing:"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:id="@+id/swingInfoTxt"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Back"
+        android:id="@+id/backFromSwingBtn"
+        android:onClick="onBackFromSwingBtnClicked"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="338dp"
+        android:text="Next Swing"
+        android:textStyle="italic"
+        android:id="@+id/newSwingBtn"
+        android:onClick="onNextSwingBtnClicked"/>
+    <Button
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="Rate your swing"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:id="@+id/swingRatingBtn"
+        android:onClick="onSwingRatingBtnClicked"/>
+
+</RelativeLayout>

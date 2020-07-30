@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rangenator_bc">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="215dp"
+        android:hint="Enter your email!"
+        android:id="@+id/newUsername"
+        android:background="#99141414"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="275dp"
+        android:inputType="textPassword"
+        android:hint="Choose your password!"
+        android:id="@+id/newPassword"
+        android:background="#99141414"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="335dp"
+        android:inputType="textPassword"
+        android:hint="Re-enter your new password!"
+        android:id="@+id/newReEnteredPassword"
+        android:background="#99141414"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.AppCompat.Display1"
+        android:layout_marginTop="425dp"
+        android:text="Submit"
+        android:id="@+id/submitNewUser"
+        android:onClick="onSubmitBtnClicked"
+        android:textColor="@color/colorDarkBlue"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Back"
+        android:id="@+id/backToLogInScreen"
+        android:onClick="onBackToLogInBtnClicked"
+        android:textColor="@color/colorDarkBlue"
+        />
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:visibility="invisible"
+        android:id="@+id/progressbar_register"/>
+
+</RelativeLayout>
